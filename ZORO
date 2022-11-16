@@ -16,7 +16,7 @@ local Settings = {
     }
 }
 
-local SelectedPart = "HumanoidRootPart"
+local SelectedPart = "Head"
 local Prediction = true
 local PredictionValue = 0.1229
 
@@ -92,13 +92,13 @@ local PredictionValue = 0.1229
         placemarker.Anchored = true
         placemarker.CanCollide = false
         if Settings.rewrittenmain.DOT == true then
-        placemarker.Size = Vector3.new(2, 2, 2)
+        placemarker.Size = Vector3.new(2, 5, 2)
         else
         placemarker.Size = Vector3.new(0, 0, 0)
         end
         placemarker.Transparency = 0
         if Settings.rewrittenmain.DOT then
-        makemarker(placemarker, placemarker, Color3.fromRGB(0, 0, 0), 0.40, 0)
+        makemarker(placemarker, placemarker, Color3.fromRGB(255, 255, 0), 0.40, 0)
         end
     end)
 
